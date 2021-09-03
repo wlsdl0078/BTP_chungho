@@ -1,0 +1,39 @@
+.dn {display: none;}
+#hd {background: #ffffff;}
+#hd_wrapper { height: auto; display: flex;
+              justify-content: space-between;
+              align-items: center;
+}
+
+#gnb .gnb_wrap {width: auto;}
+#hd_wrapper::after, .gnb_1dli .bg  {display: none;}
+
+/* 전체버튼 */
+#gnb .gnb_menu_btn {display: none;}
+
+#logo {padding: 0;}
+#gnb_1dul .gnb_1da {font-size: 1.2rem;}
+#gnb #gnb_1dul {border-bottom: 0;}
+
+/* 대메뉴 li 태그 */
+#gnb .gnb_1dul {line-height: 1; position: relative; margin: : 0 25px; }
+
+/* 평상시 대메뉴 li after */
+#gnb .gnb_1dli:after { content: ""; display: block;
+position: absolute; left:15px; width: 0; bottom: -15px; height: 5px; background: red;
+transition: 0.5s;}
+
+/* 평상시 대메뉴 li 롤오버되었을떄 after */
+#gnb .gnb_1dli.gnb_1dli_on:after {width: 10px;}
+
+/* 평상시 대메뉴 li before */
+#gnb .gnb_1dli:before { content: ""; display: block;
+position: absolute; left: 26px; width: 0; bottom: -15px; height: 5px; background: blue;
+transition: 0.5s; transition-delay: 0.5s;}
+
+/* 평상시 대메뉴 li 롤오버되었을떄 before */
+#gnb .gnb_1dli.gnb_1dli_on:before {width:calc(100% - 60px);}
+
+#wrapper {padding-top: 80px;}
+
+.gnb_2dul  {display: block;}

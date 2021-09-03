@@ -1,0 +1,6 @@
+.dn {display: none;}
+#hd {background-color: white;}
+#hd_wrapper { height: auto; display: flex;
+              justify-content: space-between;
+              align-items: center;
+}
